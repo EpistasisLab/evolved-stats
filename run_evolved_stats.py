@@ -73,13 +73,13 @@ pset = gp.PrimitiveSetTyped('MAIN', [np.ndarray, np.ndarray], float)
 pset.renameArguments(ARG0='x1')
 pset.renameArguments(ARG1='x2')
 
-# Logical operators on the distance array
+# Logical operators on the array
 #pset.addPrimitive(np.logical_and, [np.ndarray, np.ndarray], np.ndarray, name='array_and')
 #pset.addPrimitive(np.logical_or, [np.ndarray, np.ndarray], np.ndarray, name='array_or')
 #pset.addPrimitive(np.logical_xor, [np.ndarray, np.ndarray], np.ndarray, name='array_xor')
 #pset.addPrimitive(np.logical_not, [np.ndarray], np.ndarray, name='array_not')
 
-# Mathematical operators on the distance array
+# Mathematical operators on the array
 #pset.addPrimitive(np.add, [np.ndarray, np.ndarray], np.ndarray, name='array_add')
 #pset.addPrimitive(np.subtract, [np.ndarray, np.ndarray], np.ndarray, name='array_sub')
 #pset.addPrimitive(np.multiply, [np.ndarray, np.ndarray], np.ndarray, name='array_mul')
@@ -88,7 +88,7 @@ pset.addPrimitive(np.sqrt, [np.ndarray], np.ndarray, name='array_sqrt')
 pset.addPrimitive(np.square, [np.ndarray], np.ndarray, name='array_square')
 pset.addPrimitive(np.abs, [np.ndarray], np.ndarray, name='array_abs')
 
-# Statistics derived from the distance array
+# Statistics derived from the array
 pset.addPrimitive(np.mean, [np.ndarray], float, name='array_mean')
 pset.addPrimitive(np.median, [np.ndarray], float, name='array_median')
 pset.addPrimitive(np.min, [np.ndarray], float, name='array_min')
@@ -114,13 +114,13 @@ pset.addPrimitive(np.sqrt, [float], float, name='float_sqrt')
 pset.addPrimitive(np.square, [float], float, name='float_square')
 pset.addPrimitive(np.abs, [float], float, name='float_abs')
 
-# Mathematical operators on the distance array with a single value
+# Mathematical operators on the array with a single value
 pset.addPrimitive(np.add, [np.ndarray, float], np.ndarray, name='array_add_float')
 pset.addPrimitive(np.subtract, [np.ndarray, float], np.ndarray, name='array_sub_float')
 pset.addPrimitive(np.multiply, [np.ndarray, float], np.ndarray, name='array_mul_float')
 pset.addPrimitive(np.divide, [np.ndarray, float], np.ndarray, name='array_div_float')
 
-# Equivalence operators on the distance array with a single value
+# Equivalence operators on the array with a single value
 #pset.addPrimitive(np.less, [np.ndarray, float], np.ndarray, name='array_less_than_float')
 #pset.addPrimitive(np.equal, [np.ndarray, float], np.ndarray, name='array_equal_float')
 
