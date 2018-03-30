@@ -125,6 +125,7 @@ pset.addPrimitive(np.divide, [np.ndarray, float], np.ndarray, name='array_div_fl
 #pset.addPrimitive(np.equal, [np.ndarray, float], np.ndarray, name='array_equal_float')
 
 # Terminals
+# The 1.0 is here only because DEAP forces us to have a float terminal; we throw out solutions that include this terminal
 pset.addTerminal(1.0, float)
 #pset.addEphemeralConstant('rand{}'.format(np.random.randint(1e9)), lambda: np.random.random() * 100., float)
 #pset.addTerminal(np.multiply(np.random.random(size=features.shape[0]), 100.), np.ndarray)
